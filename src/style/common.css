@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Poppins;
+    font-weight: 400;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: 500;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: 700;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: 900;
+    src: url(../fonts/Poppins-Black.ttf);
+}
+
+:root {
+    --textColor: #000000;
+    --yellow: #EBD96B;
+    --white: #FFFFFF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--textColor);
+}
+.container {
+    max-width: 1750px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title-2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 100px;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: 0.06em;
+    color: #000;
+}
+.title-2::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 190px;
+    height: 32px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url('./../img/icons/decor-yellow.svg');
+}
